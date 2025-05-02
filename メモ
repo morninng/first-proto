@@ -1,4 +1,5 @@
 
+▪ proto file の出力
 
 protoc -I ./  \
   --go_out ./golang  \
@@ -6,4 +7,8 @@ protoc -I ./  \
   --go-grpc_out ./golang  \
   --go-grpc_opt paths=source_relative  \
   ./order/order.proto
+
+
+▪ tag付け
+  git tag -a golang/order/v1.2.3 -m "golang/order/v1.2.3"
 

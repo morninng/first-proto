@@ -143,7 +143,7 @@ func (x *OrderItem) GetQuantity() int32 {
 
 type CreateOrderResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	OrderId       int32                  `protobuf:"varint,1,opt,name=order_id,json=orderId,proto3" json:"order_id,omitempty"`
+	OrderId       int64                  `protobuf:"varint,1,opt,name=order_id,json=orderId,proto3" json:"order_id,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -178,7 +178,7 @@ func (*CreateOrderResponse) Descriptor() ([]byte, []int) {
 	return file_order_order_proto_rawDescGZIP(), []int{2}
 }
 
-func (x *CreateOrderResponse) GetOrderId() int32 {
+func (x *CreateOrderResponse) GetOrderId() int64 {
 	if x != nil {
 		return x.OrderId
 	}
@@ -203,9 +203,9 @@ const file_order_order_proto_rawDesc = "" +
 	"unit_price\x18\x02 \x01(\x02R\tunitPrice\x12\x1a\n" +
 	"\bquantity\x18\x03 \x01(\x05R\bquantity\"0\n" +
 	"\x13CreateOrderResponse\x12\x19\n" +
-	"\border_id\x18\x01 \x01(\x05R\aorderId2<\n" +
+	"\border_id\x18\x01 \x01(\x03R\aorderId2<\n" +
 	"\x05Order\x123\n" +
-	"\x06Create\x12\x13.CreateOrderRequest\x1a\x14.CreateOrderResponseB-Z+github.com/huseyinbabal/microservices/orderb\x06proto3"
+	"\x06Create\x12\x13.CreateOrderRequest\x1a\x14.CreateOrderResponseB.Z,github.com/morninng/first-proto/golang/orderb\x06proto3"
 
 var (
 	file_order_order_proto_rawDescOnce sync.Once
